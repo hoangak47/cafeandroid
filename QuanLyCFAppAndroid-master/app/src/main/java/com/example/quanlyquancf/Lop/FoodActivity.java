@@ -1,7 +1,10 @@
 package com.example.quanlyquancf.Lop;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -40,6 +43,15 @@ public class FoodActivity extends AppCompatActivity {
                 arrFood = list;
                 //     SetTable();
                 init();
+                final Dialog dialogbill=new Dialog(FoodActivity.this,R.style.AppTheme);
+                Button bill = (Button)findViewById(R.id.bill);
+                bill.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialogbill.setContentView(R.layout.bill);
+                        dialogbill.show();
+                    }
+                });
             }
         });
 
@@ -56,6 +68,7 @@ public class FoodActivity extends AppCompatActivity {
 
         FoodAdapter shopAdapter= new FoodAdapter(arrFood,getApplicationContext());
         recyclerView.setAdapter(shopAdapter);
+
     }
 
     private void KhoiTaoDatabase()

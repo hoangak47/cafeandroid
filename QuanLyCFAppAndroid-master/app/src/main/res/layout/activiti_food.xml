@@ -59,7 +59,9 @@
                 android:layout_weight="1"
                 android:text="Bill"
                 android:textSize="20dp"
-                android:id="@+id/bill"/>
+                android:id="@+id/bill"
+                android:background="@drawable/bogoc"
+                android:textAllCaps="false"/>
             <!--                android:background="@drawable/bo_goc"-->
 
             />
@@ -80,25 +82,34 @@
             android:layout_weight="1"
 
             ></androidx.recyclerview.widget.RecyclerView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="#FFEB3B">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Trở về"
-                android:textSize="20dp" />
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/back"
+                android:text="Chọn lại"
+                android:textSize="20dp"
+                android:background="@drawable/designbottom"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Thanh toán"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/designbottom"
+                android:drawableRight="@drawable/thanhtoan"
+                android:textAllCaps="false"/>
         </LinearLayout>
 
 
