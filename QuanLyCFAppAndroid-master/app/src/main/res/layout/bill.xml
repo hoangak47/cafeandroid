@@ -9,7 +9,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Thống kê chi tiết"
+                android:text="Bill"
                 android:textColor="#2196F3"
                 android:textSize="30dp" />
 

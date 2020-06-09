@@ -23,30 +23,6 @@ public class Food {
         Price = price;
     }
 
-    public String getImage() {
-        return Image;
-    }
-
-    public void setImage(String image) {
-        Image = image;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public Long getPrice() {
-        return Price;
-    }
-
-    public void setPrice(Long price) {
-        Price = price;
-    }
-
     public String getDetail() {
         return Detail;
     }
@@ -77,5 +53,29 @@ public class Food {
 
     public void setIDCategory(String IDCategory) {
         this.IDCategory = IDCategory;
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public Long getPrice() {
+        return Price;
+    }
+
+    public void setPrice(Long price) {
+        Price = price;
     }
 }

@@ -108,6 +108,7 @@ public class Table extends AppCompatActivity {
                     TableRow.LayoutParams.MATCH_PARENT,
                     200, 1f);
             params.setMargins(10, 10, 10, 10);
+            final int idTable = i;
             if (i % 2 == 0) {
 
                 final Button myButton = new Button(this);
@@ -119,8 +120,11 @@ public class Table extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         //Toast.makeText(getApplicationContext(), "Bàn " + myButton.getId(), Toast.LENGTH_LONG).show();
-//                        Intent intent = new Intent(getApplicationContext(), Food.class);
-//                        startActivity(intent);
+                        Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
+                        Bundle b = new Bundle();
+                        b.putInt("id",idTable);
+                        intent.putExtras(b);
+                        startActivity(intent);
                     }
                 });
 
@@ -134,9 +138,11 @@ public class Table extends AppCompatActivity {
                     myButton2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                          //  Toast.makeText(getApplicationContext(), "Bàn " + myButton2.getId(), Toast.LENGTH_LONG).show();
-//                            Intent intent = new Intent(getApplicationContext(), Food.class);
-//                            startActivity(intent);
+                            Intent intent = new Intent(getApplicationContext(), FoodActivity.class);
+                            Bundle b = new Bundle();
+                            b.putInt("idTable",idTable);
+                            intent.putExtra("table",b);
+                            startActivity(intent);
                         }
                     });
                     myButton2.setLayoutParams(params);
