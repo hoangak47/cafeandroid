@@ -91,15 +91,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
                 }
             });
 
-//            final Dialog dialogbill=new Dialog(context,R.style.AppTheme);
-//            Button bill = (Button)itemView.findViewById(R.id.bill);
-//            bill.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    dialogbill.setContentView(R.layout.bill);
-//                    dialogbill.show();
-//                }
-//            });
 
         }
     }
