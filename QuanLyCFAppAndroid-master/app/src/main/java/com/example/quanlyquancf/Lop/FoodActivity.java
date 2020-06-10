@@ -64,8 +64,10 @@ public class FoodActivity extends AppCompatActivity implements FoodAdapter.OnIte
         bill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bill.setContentView(R.layout.bill);
+                Bill.setContentView(R.layout.activity_bill);
                 Bill.show();
+
+
 
             }
         });
