@@ -31,7 +31,19 @@ public class BillActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(dividerItemDecoration);
         ArrayList<Bill> list = new ArrayList<>();
         list.add(new Bill("1","as","2","2"));
-
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
+        list.add(new Bill("1","as","2","2"));
         BillAdapter billAdapter= new BillAdapter(list,getApplicationContext());
         recyclerView.setAdapter(billAdapter);
     }
