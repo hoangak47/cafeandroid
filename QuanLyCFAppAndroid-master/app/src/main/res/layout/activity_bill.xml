@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/thongke"
-        android:minHeight="350dp"
+        android:minHeight="400dp"
         android:layout_marginLeft="5dp"
         android:background="#E3E3E3"
 
@@ -153,7 +153,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:id="@+id/btnClearBill"
-            android:drawableLeft="@drawable/back"
             android:text="Xóa tất cả"
             android:textSize="20dp"
             android:background="@drawable/designbutton"
@@ -167,7 +166,6 @@
             android:textSize="20dp"
             android:layout_marginLeft="50dp"
             android:background="@drawable/designbutton"
-            android:drawableRight="@drawable/thanhtoan"
             android:textAllCaps="false"
             android:id="@+id/btnXacNhanBill"/>
     </LinearLayout>
